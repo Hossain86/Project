@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <style>
+    /* Apply box-sizing and reset default margins and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+  background-color: rgb(200, 227, 245);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-right: 5px;
+  padding-left: 5%;
+  background-color: #203354;
+}
+
+.logo {
+  margin-right: 20px;
+  width: 100px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically align the items */
+  padding: 0px 20px;
+  list-style: none; /* Remove default list styling */
+}
+
+.nav_links li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+.nav_links li:last-child {
+  margin-right: 0; /* Remove right margin from the last list item */
+}
+
+/* Styles for links */
+.nav_links a {
+  font-weight: 500;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transition effect for link color */
+}
+
+.nav_links a:hover {
+  color: #0088a9; /* Change link color on hover */
+}
+
+/* Styles for button */
+
+.cta {
+  margin-left: auto;
+  margin-right: 20px; /* Move the CTA button to the right end */
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(59, 153, 176);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition effect for button background color */
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8); /* Change button background color on hover */
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img.png" class="logo" alt="logo">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Eduacation</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <a class="cta" href="#"><button>Contact</button></a>
+  </header>
+</body>
+</html>
